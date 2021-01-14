@@ -1,5 +1,5 @@
 {
-	"name": "SrcConfirmedGlobal",
+	"name": "SrcConfirmed",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "CnxLocalFiles",
