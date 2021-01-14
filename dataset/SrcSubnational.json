@@ -1,5 +1,5 @@
 {
-	"name": "SubnationalDataSet",
+	"name": "SrcSubnational",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "CnxLocalFiles",
