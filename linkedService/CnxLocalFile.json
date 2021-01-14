@@ -1,0 +1,17 @@
+{
+	"name": "CnxLocalFile",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Users\\mkdous\\Desktop\\Ecole de la data\\AZURE Cloud\\Données Formation Azure",
+			"userId": "BETD\\mkdous",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1YzFlZTIxOS0yODM5LTQwNWItODk4ZC0yOWNmNzlkYzU2NWQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "MyLocalFiles",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
