@@ -1,0 +1,41 @@
+{
+	"name": "Chargement des donnees",
+	"properties": {
+		"activities": [
+			{
+				"name": "Data Ingestion",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Data Ingestion",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Data Ingestion COVID",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Data Ingestion",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Data Ingestion COVID",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
